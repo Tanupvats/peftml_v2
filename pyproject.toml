@@ -9,7 +9,7 @@ description = "Production-grade PyTorch model compression: pruning, quantization
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.9"
-authors = [{ name = "peftml contributors" }]
+authors = [{ name = "Tanup Vats" }]
 keywords = [
     "pytorch",
     "model-compression",
