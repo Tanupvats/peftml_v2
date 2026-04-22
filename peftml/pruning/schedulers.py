@@ -1,9 +1,4 @@
-"""Iterative pruning schedulers.
 
-Gradually increasing sparsity over training avoids the accuracy collapse
-seen with one-shot pruning.  The default cubic polynomial schedule follows
-Zhu & Gupta, 2017 ("To Prune, or Not to Prune").
-"""
 
 from __future__ import annotations
 

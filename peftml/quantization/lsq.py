@@ -1,9 +1,4 @@
-"""Learned Step-size Quantization (LSQ) for weights.
 
-Implements the LSQ method from Esser et al., 2020.  Provides drop-in
-replacements for ``nn.Conv2d`` and ``nn.Linear`` that learn a per-tensor
-(or per-channel) step size during QAT.
-"""
 
 from __future__ import annotations
 

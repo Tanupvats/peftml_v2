@@ -1,10 +1,4 @@
-"""Activation observers for post-training quantization calibration.
 
-Observers attach forward hooks to ``nn.Conv2d`` and ``nn.Linear`` layers,
-recording per-channel activation statistics (max, mean, etc.) over a
-calibration dataset.  These statistics drive SmoothQuant and other PTQ
-schemes.
-"""
 
 from __future__ import annotations
 

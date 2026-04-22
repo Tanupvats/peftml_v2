@@ -1,9 +1,4 @@
-"""PACT — Parameterized Clipping Activation (Choi et al., 2018).
 
-Replaces ReLU / ReLU6 activations with a learnable clipping bound ``α``
-so that the activation range is co-optimised with the rest of the network
-during quantization-aware training.
-"""
 
 from __future__ import annotations
 

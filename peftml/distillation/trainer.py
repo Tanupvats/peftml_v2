@@ -1,9 +1,4 @@
-"""Dynamic Knowledge Distillation trainer.
 
-Wraps a student model and a frozen teacher model in a single ``nn.Module``
-that computes the combined task + logit KD + intermediate feature KD loss
-in one ``.forward()`` call.
-"""
 
 from __future__ import annotations
 

@@ -1,9 +1,4 @@
-"""ONNX export helpers.
 
-Wraps ``torch.onnx.export`` with sensible defaults and optional
-shape inference / simplification (if ``onnx`` and ``onnxruntime`` are
-installed).
-"""
 
 from __future__ import annotations
 

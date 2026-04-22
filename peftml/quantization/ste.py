@@ -1,8 +1,4 @@
-"""Straight-Through Estimator (STE) and gradient-scaling primitives.
 
-These autograd functions are the mathematical backbone of all
-quantization-aware training in peftml.
-"""
 
 from __future__ import annotations
 

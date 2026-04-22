@@ -1,9 +1,4 @@
-"""SmoothQuant — activation-aware weight quantization (Xiao et al., 2023).
 
-Migrates quantization difficulty from activations to weights by computing
-a per-channel scaling factor ``s`` and dividing the preceding layer's
-output (≈ current layer's input) by ``s`` while multiplying weights by ``s``.
-"""
 
 from __future__ import annotations
 

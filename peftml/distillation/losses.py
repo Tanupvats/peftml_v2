@@ -1,8 +1,4 @@
-"""Knowledge distillation loss functions.
 
-Covers logit-level (Hinton KD), spatial feature (MSE), and
-cosine-similarity losses for classification, segmentation, and detection.
-"""
 
 from __future__ import annotations
 

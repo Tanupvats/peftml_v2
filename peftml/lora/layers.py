@@ -1,10 +1,4 @@
-"""Core LoRA layer.
 
-Implements the Low-Rank Adaptation from Hu et al., 2022.  The trainable
-delta is decomposed as ``ΔW = B · A · (α / r)`` where ``A ∈ R^{r×d_in}``
-and ``B ∈ R^{d_out×r}``.  ``B`` is initialised to zero so the model's
-output is unchanged at the start of training.
-"""
 
 from __future__ import annotations
 

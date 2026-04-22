@@ -1,21 +1,4 @@
-"""peftml — Production-grade PyTorch model compression toolkit.
 
-Prune, quantise, distil, and fine-tune deep learning models with a
-single, unified API::
-
-    from peftml import ModelCompressor
-
-    comp = ModelCompressor(model)
-
-    # CNN compression: pruning + quantization
-    pipe = comp.sparse_qat(bits=8, target_sparsity=0.5)
-
-    # LLM fine-tuning: QLoRA
-    comp.apply_qlora(target_modules=["q_proj", "v_proj"], r=16)
-
-    # Knowledge distillation
-    trainer = comp.distill(teacher_model, task_type="classification")
-"""
 
 __version__ = "2.0.0"
 

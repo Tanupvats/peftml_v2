@@ -1,11 +1,4 @@
-"""QLoRA orchestrator for LLM fine-tuning.
 
-Handles the full preparation pipeline:
-1. Freeze all base parameters.
-2. Cast normalization layers to FP32 for numerical stability.
-3. Recursively inject :class:`LoRALinear` adapters into targeted projections.
-4. Report trainable parameter budget.
-"""
 
 from __future__ import annotations
 
@@ -47,9 +40,7 @@ class QLoRAOrchestrator:
         self.config = config or LoRAConfig()
         self._injected = False
 
-    # -----------------------------------------------------------------
-    # Public API
-    # -----------------------------------------------------------------
+
     def prepare(self) -> nn.Module:
         """Freeze → stabilise norms → inject adapters.  Returns the model."""
         self._freeze_base()
@@ -98,9 +89,7 @@ class QLoRAOrchestrator:
                 raise KeyError(f"Adapter key '{key}' not found in model.")
         logger.info("Loaded %d adapter tensors.", loaded)
 
-    # -----------------------------------------------------------------
-    # Internals
-    # -----------------------------------------------------------------
+
     def _freeze_base(self) -> None:
         """Freeze every parameter in the model."""
         for param in self.model.parameters():

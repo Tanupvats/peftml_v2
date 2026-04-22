@@ -1,4 +1,4 @@
-"""Lightweight registry for extensible component lookup."""
+
 
 from __future__ import annotations
 

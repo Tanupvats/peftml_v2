@@ -1,8 +1,4 @@
-"""Pruning engine built on ``torch.nn.utils.prune``.
 
-Provides unstructured (L1), structured (L2 filter), and global pruning
-with safe layer filtering, sparsity reporting, and permanent mask commitment.
-"""
 
 from __future__ import annotations
 

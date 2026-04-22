@@ -1,10 +1,4 @@
-"""Feature adapters for cross-architecture KD.
 
-When teacher and student use different channel dimensions (e.g.
-ResNet-50 → MobileNetV3) a small 1×1 projection is needed to align
-the student's features to the teacher's space before computing the
-distillation loss.
-"""
 
 from __future__ import annotations
 

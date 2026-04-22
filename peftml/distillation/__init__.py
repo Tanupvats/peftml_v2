@@ -1,4 +1,4 @@
-"""Knowledge distillation: losses, feature adapters, and the unified trainer."""
+
 
 from .adapters import ChannelAdapter, LinearAdapter
 from .losses import (

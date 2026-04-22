@@ -1,14 +1,4 @@
-"""Sparse Quantization-Aware Training pipeline.
 
-Orchestrates the delicate interaction between pruning masks and LSQ /
-PACT quantization.  The key invariant is:
-
-    **Quantize first, then attach pruning masks.**
-
-This ensures the pruner's ``weight_mask`` reparametrisation wraps the
-quantised layer's ``weight`` attribute, so masks are applied *before*
-the LSQ forward pass quantises.
-"""
 
 from __future__ import annotations
 

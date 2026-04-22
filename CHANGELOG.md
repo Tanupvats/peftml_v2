@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 — Full rewrite
+## 2.0.0 
 
 ### Breaking changes
 
@@ -43,13 +43,6 @@
 - **`count_parameters()`, `freeze()`, `unfreeze()`, `compute_model_sparsity()`** — model
   inspection utilities.
 - **Comprehensive test suite** — 40+ unit and integration tests.
-
-### Internal improvements
-
-- All `print()` replaced with structured `logging`.
-- Type hints on every public function.
-- Docstrings on every public class and method.
-- Module replacement uses `set_attr_by_name` for safe nested attribute setting.
 
 ## 1.0.0 — Initial release
 

@@ -1,4 +1,4 @@
-"""Shared utility functions used across peftml."""
+
 
 from __future__ import annotations
 
@@ -24,9 +24,7 @@ def get_logger(name: str, level: int = logging.INFO) -> logging.Logger:
     return logger
 
 
-# ---------------------------------------------------------------------------
-# Model inspection helpers
-# ---------------------------------------------------------------------------
+
 def count_parameters(model: nn.Module) -> Dict[str, int]:
     """Return total, trainable, and frozen parameter counts."""
     total = sum(p.numel() for p in model.parameters())

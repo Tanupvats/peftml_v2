@@ -1,28 +1,4 @@
-"""Unified ``ModelCompressor`` — the top-level entry point.
 
-Provides a single, fluent interface to every compression technique in
-peftml.  Each method validates inputs, applies the transformation, and
-returns either the modified model or a pipeline/trainer handle that the
-caller drives through training.
-
-Example::
-
-    from peftml import ModelCompressor
-
-    comp = ModelCompressor(my_resnet)
-
-    # One-shot pruning
-    pruner = comp.prune(method="global", amount=0.4)
-    pruner.commit()
-
-    # Or sparse QAT
-    pipe = comp.sparse_qat(bits=8, target_sparsity=0.5)
-    for epoch in range(30):
-        for batch in loader:
-            pipe.train_step(batch, optim, criterion)
-        pipe.step_epoch()
-    model = pipe.export()
-"""
 
 from __future__ import annotations
 

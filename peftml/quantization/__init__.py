@@ -1,4 +1,4 @@
-"""Quantization engines: LSQ, PACT, SmoothQuant, and calibration observers."""
+
 
 from .lsq import QConv2d, QLinear, replace_with_lsq
 from .observers import ActivationObserver

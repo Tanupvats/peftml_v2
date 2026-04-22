@@ -1,4 +1,4 @@
-"""Core infrastructure: configs, registries, and shared utilities."""
+
 
 from .config import (
     FeatureMapping,
